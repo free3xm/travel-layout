@@ -2,7 +2,7 @@ const express = require("express"),
       app = express(),
       path = require("path"),
       bodyParser = require("body-parser"),
-      port = 3000,
+      port = process.env.PORT ||3000,
       nodemailer = require("nodemailer");
 app.use(express.static(path.join(__dirname, "/public/")));
 app.use(bodyParser.urlencoded({

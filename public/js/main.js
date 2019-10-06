@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
         form = document.forms[0];
   form.addEventListener("submit", function(event){
     event.preventDefault();
-    fetch("http://localhost:3000/",{
+    fetch("https://stark-falls-66094.herokuapp.com/",{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
