@@ -32,11 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
       }, 2000);
     });
   });
-console.log( JSON.stringify({
-  name: form.name.value,
-  email: form.name.value,
-  message: form.userMessage.value
-}));
   headerText.style.opacity = 1;
   function onView(elems){
   elems.forEach(e => window.scrollY + 100 > e.getBoundingClientRect().top ?
