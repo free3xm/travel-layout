@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Travels">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Unna:400,70&Maven+Pro&Raleway:400,700&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/c3607eb3da.js"></script>
   <script defer src="./js/main.js"></script>
@@ -39,7 +45,10 @@
         </p>
         <a href="#" class="link">read more</a>
       </div>
-      <img src="./img/aboutme.png" alt="" class="aboutme_img">
+      <picture>
+        <source srcset="./img/aboutme.webp" type="image/webp">
+        <img src="./img/aboutme.png" alt="about me" class="aboutme_img">
+      </picture>
     </div>
   </section>
   <section class="latestArticle_wrapper">
@@ -47,7 +56,10 @@
     <div class="latestArticle">
       <div class="latestArticle_item">
         <div class="latestArticle_img_wrapper">
-          <img src="./img/article1.png" alt="" class="latestArticle_img">
+          <picture>
+            <source srcset="./img/article1.webp" type="image/webp">
+            <img src="./img/article1.png" alt="article" loading="lazy" class="latestArticle_img">
+          </picture>
         </div>
         <h3>Lorem ipsum dolor.</h3>
         <p class="text_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -58,7 +70,11 @@
       </div>
       <div class="latestArticle_item">
         <div class="latestArticle_img_wrapper">
-          <img src="./img/article2.png" alt="" class="latestArticle_img">
+          <picture>
+            <source srcset="./img/article2.webp" type="image/webp">
+            <source srcset="./img/article2.png" type="image/png">
+            <img src="./img/article2.png" alt="article" loading="lazy" class="latestArticle_img">
+          </picture>
         </div>
         <h3>Lorem ipsum dolor.</h3>
         <p class="text_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -69,7 +85,10 @@
       </div>
       <div class="latestArticle_item">
         <div class="latestArticle_img_wrapper">
-          <img src="./img/article3.png" alt="" class="latestArticle_img">
+          <picture>
+            <source srcset="./img/article3.webp" type="image/webp">
+            <img src="./img/article3.png" alt="article" loading="lazy" class="latestArticle_img">
+          </picture>
         </div>
         <h3>Lorem ipsum dolor.</h3>
         <p class="text_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -85,27 +104,48 @@
       <div class="gallery">
         <div class="gallery_block_first">
           <div class="gallery_item">
-            <img src="./img/gallery1.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery1.webp" type="image/webp">
+              <img src="./img/gallery1.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
           <div class="gallery_item">
-            <img src="./img/gallery2.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery2.webp" type="image/webp">
+              <img src="./img/gallery2.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
         </div>
         <div class="gallery_block_second">
           <div class="gallery_item">
-            <img src="./img/gallery3.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery3.webp" type="image/webp">
+              <img src="./img/gallery3.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
           <div class="gallery_item">
-            <img src="./img/gallery4.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery4.webp" type="image/webp">
+              <img src="./img/gallery4.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
           <div class="gallery_item">
-            <img src="./img/gallery5.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery5.webp" type="image/webp">
+              <img src="./img/gallery5.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
           <div class="gallery_item">
-            <img src="./img/gallery6.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery6.webp" type="image/webp">
+              <img src="./img/gallery6.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
           <div class="gallery_item">
-            <img src="./img/gallery7.png" alt="" class="gallery_img">
+            <picture>
+              <source srcset="./img/gallery7.webp" type="image/webp">
+              <img src="./img/gallery7.png" alt="gallery img" loading="lazy" class="gallery_img">
+            </picture>
           </div>
         </div>
       </div>
@@ -114,23 +154,26 @@
     <section class="contact_wrapper">
       <div class="contact">
         <div class="contact_img_wrapper">
-          <img src="./img/contact.png" alt="" class="contact_img">
+          <picture>
+            <source srcset="./img/contact.webp" type="image/webp">
+            <img src="./img/contact.png" alt="contact" loading="lazy" class="contact_img">
+          </picture>
         </div>
         <form action="#" class="contact_form">
           <h2 class="title">Contact</h2>
-          <input type="text" name="name" class="name" required placeholder="Your name">
-          <input type="email" name="email" class="email" required placeholder="Your email">
-          <textarea cols="30" rows="5" name="userMessage" class="message" placeholder="Message"></textarea>
-          <button type="submit" name="btnSubmit" class="link">send message</button>
+          <input type="text" aria-label="input your name" name="name" class="name" required placeholder="Your name">
+          <input type="email" aria-label="input your email" name="email" class="email" required placeholder="Your email">
+          <textarea aria-label="input your message" cols="30" rows="5" name="userMessage" class="message" placeholder="Message"></textarea>
+          <button aria-label="button to submit" type="submit" name="btnSubmit" class="link">send message</button>
         </form>
       </div>
     </section>
     <footer class="footer">
       <nav class="nav_links">
-        <a href="https://facebook.com" ><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com" ><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com" ><i class="fa fa-instagram "></i></a>
-        <a href="https://pinterest.com" ><i class="fa fa-pinterest-p"></i></a>
+        <a aria-label="link to facebook" href="https://facebook.com" ><i class="fa fa-facebook"></i></a>
+        <a aria-label="link to twitter" href="https://twitter.com" ><i class="fa fa-twitter"></i></a>
+        <a aria-label="link to instagram" href="https://instagram.com" ><i class="fa fa-instagram "></i></a>
+        <a aria-label="link to pinterest" href="https://pinterest.com" ><i class="fa fa-pinterest-p"></i></a>
       </nav>
     </footer>
 </main>

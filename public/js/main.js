@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", function(){
   const headerText = document.querySelector(".text_wrapper"),
         elements = document.querySelectorAll(".aboutme, .latestArticle_item, .gallery_item, .contact");
         form = document.forms[0];
+        background = document.querySelectorAll(".sky, .forest, .main");
+// check for webp
+  function checkWebpSupport(){
+    const img = new Image();
+     img.src = "../img/aboutme.webp";
+
+     img.onerror = function(){
+        background[0].style.background = "url(./img/skybg.png) repeat-x center";
+        background[1].style.background = "url(./img/forestbg3.png) repeat-x center";
+        background[2].style.background = "url(./img/bg.png) center repeat";
+     };
+  }
+checkWebpSupport();
+
+// form handler
   form.addEventListener("submit", function(event){
     event.preventDefault();
     fetch("https://stark-falls-66094.herokuapp.com/",{
@@ -15,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
         message: form.userMessage.value
       })
     }).then(function(response){
-      return  response.text();
+      return  response.json();
     })
     .then(function(data){
       form.name.value ="";
@@ -32,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function(){
       }, 2000);
     });
   });
+
+// some features with scroll
   headerText.style.opacity = 1;
   function onView(elems){
   elems.forEach(e => window.scrollY + 100 > e.getBoundingClientRect().top ?

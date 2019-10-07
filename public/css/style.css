@@ -15,7 +15,7 @@ body{
   position: absolute;
 }
 .sky{
-  background: url("../img/skybg.png") repeat-x center ;
+  background: url("../img/skybg.webp") repeat-x center ;
   height: 875px;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@ body{
   width: 100vw;
 }
 .forest{
-  background: url("../img/forestbg3.png") repeat-x center;
+  background: url("../img/forestbg3.webp") repeat-x center;
   width: 100vw;
   height: 1278px;
   bottom: -1000px;
@@ -83,7 +83,7 @@ body{
   margin-top: 180px;
   position: relative;
   z-index: 99;
-  background: url("../img/bg.png") repeat center;
+  background: url("../img/bg.webp") repeat center;
   overflow: hidden;
 }
 .aboutme{
